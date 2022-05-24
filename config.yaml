@@ -1,4 +1,4 @@
-baseurl: https://yshanchui.github.io
+baseurl: https://yshanchui.github.io/public
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
