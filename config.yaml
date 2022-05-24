@@ -7,11 +7,11 @@ title: Yshanchui
 languages:
     en:
         languageName: English
-        title: Yshanchui
+        title:
         weight: 2
     zh-cn:
         languageName: 中文
-        title: Yshanchui
+        title:
         weight: 1
 
 # Change it to your Disqus shortname before using
@@ -49,7 +49,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 记录学习路上的一些文章及关注点
         avatar:
             enabled: true
             local: true
@@ -192,7 +192,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/Yshanchui/Yshanchui.github.io
+          url: https://github.com/Yshanchui
           params:
               icon: brand-github
 
