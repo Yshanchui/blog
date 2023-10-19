@@ -1,0 +1,151 @@
+baseURL: https://ctsn.cc/
+languageCode: zh-cn
+title: Yshanchui
+theme: hugo-theme-stack
+
+permalinks:
+  post: /p/:slug/
+  page: /:slug/
+
+#菜单
+menu:
+    social:
+      - identifier: github
+        name: Github
+        url: https://github.com/yshanchui
+        params:
+          icon: brand-github
+      - identifier: twitter
+        name: Twitter
+        url: https://twitter.com/MaloneBaB
+        params:
+          icon: brand-twitter
+    main:
+        - name: 主页
+          url: /
+          weight: 10
+          identifier: home
+          params:
+              icon: home
+              newTab: false
+        - name: 归档
+          url: /archives
+          weight: 20
+          identifier: archives
+          params:
+              icon: archives
+              newTab: false
+        - name: 分类
+          url: /categories
+          weight: 22
+          identifier: categories
+          params:
+            icon: categories
+            newTab: false
+        - name: 标签
+          url: /tags
+          weight: 24
+          identifier: tags
+          params:
+            icon: tag
+            newTab: false
+        - name: 关于
+          url: /about
+          weight: 40
+          identifier: about
+          params:
+              icon: user
+              newTab: false
+        - name: 搜索
+          url: /search
+          weight: 50
+          identifier: search
+          params:
+              icon: search
+              newTab: false
+
+Params:
+    mainSections:
+      - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon: /favicon.ico
+    #页脚
+    Footer:
+        since: 2023
+        customText: Essay Collection
+    #评论
+    Comments:
+        enable: true
+        provider: cactus
+    #日期格式
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006 15:04 MST
+    #侧边栏
+    sidebar:
+        compact: false
+        emoji: 🙄
+        subtitle: の Essay Collection
+        #头像
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
+    #文章
+    article:
+      math: true
+      toc: true
+      readingTime: true
+      license:
+        enabled: false
+        default: Licensed under CC BY-NC-SA 4.0
+    #小部件
+    widgets:
+      homepage:
+        - type: search
+        - type: archives
+          params:
+            limit: 5
+        - type: categories
+          params:
+            limit: 10
+        - type: tag-cloud
+          params:
+            limit: 10
+      page:
+        - type: toc
+
+
+    opengraph:
+      twitter:
+        site: MaloneBaB
+        card: summary_large_image
+    defaultImage:
+      opengraph:
+        enabled: true
+        local: true
+        src: img/avatar.png
+
+    #背景色
+    colorScheme:
+      # Display toggle
+      toggle: true
+
+      # Available values: auto, light, dark
+      default: auto
+
+    #图像处理
+    imageProcessing:
+      cover:
+        enabled: true
+      content:
+        enabled: true
+
+markup:
+  tableOfContents:
+    endLevel: 6
+
+  goldmark:
+    renderer:
+      unsafe: true
