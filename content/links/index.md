@@ -1,13 +1,14 @@
 ---
 title: "友链"
-toc: false
+date: 2023-10-24 00:14:11 +0800
+layout: "links"
 slug: "links"
 links:
     - title: "Github"
-      description: "Amet elit magni error commodi nam deleniti ipsa! Nemo illo nulla consequuntur accusamus doloremque. Officiis ipsum quidem harum delectus nostrum? Accusantium dignissimos porro minus eligendi neque Nesciunt sequi itaque optio."
+      description: 
       # image: "some imag url..."
     - title: "Gitlab"
-      description: "Amet elit magni error commodi nam deleniti ipsa! Nemo illo nulla consequuntur accusamus doloremque. Officiis ipsum quidem harum delectus nostrum? Accusantium dignissimos porro minus eligendi neque Nesciunt sequi itaque optio."
+      description: 
       # image: "some imag url..."
 menu:
     main:
@@ -15,6 +16,3 @@ menu:
       params:
             icon: "link"
 ---
-
-### page content for more detailed links
-

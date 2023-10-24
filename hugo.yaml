@@ -3,6 +3,8 @@ languageCode: zh-cn
 title: Yshanchui
 theme: hugo-theme-stack
 
+DefaultContentLanguage: zh-cn
+
 permalinks:
   post: /p/:slug/
   page: /:slug/
@@ -43,7 +45,22 @@ Params:
     #评论
     Comments:
         enable: true
-        provider: cactus
+        provider: waline
+
+        waline:
+          serverURL: https://jfqtylr2.api.lncldglobal.com
+          lang:
+          visitor:
+          avatar:
+          emoji:
+            - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+          requiredMeta:
+            - nick
+            - mail
+          placeholder:
+          locale:
+            admin: Admin
+
     #日期格式
     dateFormat:
         published: Jan 02, 2006
